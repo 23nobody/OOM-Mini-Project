@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TimePicker
+        android:id="@+id/timePick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:amPmBackgroundColor="@android:color/holo_blue_light"
+        android:elevation="10dp"
+        android:fontFamily="monospace"
+        android:timePickerMode="spinner" />
+    <TextView
+        android:id="@+id/alarmText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:gravity="center_horizontal"
+        android:text="Set alarm"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp" />
+
+    <ToggleButton
+        android:id="@+id/toggle_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onToggleClicked"
+        android:textOff="off"
+        android:textOn="On"
+        android:textColor="#ffff"
+        android:textSize="24sp" />
+</LinearLayout>

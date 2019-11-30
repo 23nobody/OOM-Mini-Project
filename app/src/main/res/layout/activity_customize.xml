@@ -17,6 +17,7 @@
         android:gravity="center_vertical"
         />
     <View
+        android:id="@+id/tc_box"
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_weight="0"
@@ -39,6 +40,7 @@
             android:gravity="center_vertical"
             />
         <View
+            android:id="@+id/bg_box"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="0"
@@ -61,6 +63,7 @@
             android:gravity="center_vertical"
             />
         <View
+            android:id="@+id/frame_box"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_weight="0"
@@ -82,6 +85,7 @@
             android:gravity="center_vertical"
             />
     <Spinner
+        android:id="@+id/font_spinner"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_weight="1"
@@ -101,12 +105,14 @@
             android:gravity="center_vertical"
             />
     <Spinner
+        android:id="@+id/tz_spinner"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_weight="1"
         android:layout_gravity="center_vertical"/>
     </LinearLayout>
     <Button
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"

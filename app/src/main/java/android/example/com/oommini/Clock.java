@@ -1,18 +1,12 @@
 package android.example.com.oommini;
 
-import android.content.BroadcastReceiver;
-import android.graphics.Color;
-import android.graphics.fonts.Font;
-
-import java.util.TimeZone;
-
 public class Clock  {
 //    private Time time;
-    private TimeZone timeZone;
-    private Color color;
-    private Color backgroundColor;
-    private Color borderColor;
-    private Font font;
+    private String timeZone;
+    private int fontcolor;
+    private int backgroundColor;
+    private int borderColor;
+    private String font;
 
 //    public Time getTime() {
 //        return time;
@@ -22,50 +16,50 @@ public class Clock  {
 //        this.time = time;
 //    }
 
-    public TimeZone getTimeZone() {
+    public String getTimeZone() {
         return timeZone;
     }
 
-    public void setTimeZone(TimeZone timeZone) {
+    public void setTimeZone(String timeZone) {
         this.timeZone = timeZone;
     }
 
-    public Color getColor() {
-        return color;
+    public int getFontColor() {
+        return fontcolor;
     }
 
-    public void setColor(Color color) {
-        this.color = color;
+    public void setFontColor(int color) {
+        this.fontcolor = color;
     }
 
-    public Color getBackgroundColor() {
+    public int getBackgroundColor() {
         return backgroundColor;
     }
 
-    public void setBackgroundColor(Color backgroundColor) {
+    public void setBackgroundColor(int backgroundColor) {
         this.backgroundColor = backgroundColor;
     }
 
-    public Color getBorderColor() {
+    public int getBorderColor() {
         return borderColor;
     }
 
-    public void setBorderColor(Color borderColor) {
+    public void setBorderColor(int borderColor) {
         this.borderColor = borderColor;
     }
 
-    public Font getFont() {
+    public String getFont() {
         return font;
     }
 
-    public void setFont(Font font) {
+    public void setFont(String font) {
         this.font = font;
     }
 
-    public Clock( TimeZone timeZone, Color color, Color backgroundColor, Color borderColor, Font font) {
+    public Clock(String timeZone, int color, int backgroundColor, int borderColor, String font) {
 //        this.time = time;
         this.timeZone = timeZone;
-        this.color = color;
+        this.fontcolor = color;
         this.backgroundColor = backgroundColor;
         this.borderColor = borderColor;
         this.font = font;

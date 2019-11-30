@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_timezone_options">
+        <item>Asia/Kolkata</item>
+        <item>Europe/Madrid</item>
+        <item>Asia/Chongqing</item>
+        <item>America/Adak</item>
+        <item>Asia/Dubai</item>
+        <item>America/Los_Angeles</item>
+    </string-array>
+    <string-array name="array_font_options">
+        <item>sans-serif</item>
+        <item>cursive</item>
+        <item>fantasy</item>
+        <item>monospace</item>
+        <item>serif</item>
+    </string-array>
+</resources>

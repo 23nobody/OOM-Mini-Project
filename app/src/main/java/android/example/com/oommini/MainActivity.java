@@ -5,47 +5,38 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextClock;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class MainActivity extends AppCompatActivity {
 
    static TextClock clock;
-   static Clock clock1;
+   static LinearLayout frame;
+   static Clock clock1 ;
+   static TextView dateView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView dateView = (TextView)findViewById(R.id.date);
+       dateView = (TextView)findViewById(R.id.date);
         clock = (TextClock) findViewById(R.id.text_clock);
+        Log.i("MainActivity","timezone "+clock.getFontFeatureSettings());
+        frame = (LinearLayout) findViewById(R.id.linear_layout);
+
+        clock1 = new Clock(clock.getTimeZone(),clock.getCurrentTextColor(),Color.parseColor("#000000"),Color.parseColor("#009688"),"Proxima Nova");
         setDate(dateView);
-//        bu12.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                TextClock clock = (TextClock) findViewById(R.id.text_clock);
-//               // clock.setTimeZone("America/Los_Angeles");
-//                clock.setFormat12Hour(clock.getFormat12Hour());
-//
-//                Log.i("12 wali button","change karnni ki koshish");
-//            }
-//        });
-//        bu24.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                TextClock clock = (TextClock) findViewById(R.id.text_clock);
-//                clock.setFormat24Hour(clock.getFormat24Hour());
-//                //clock.setTimeZone("America/Los_Angeles");
-//                Log.i("24 wali button","change karnni ki koshish");
-//            }
-//        });
         Button  alarmButton = (Button) findViewById(R.id.alarms_button);
         alarmButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,8 +62,22 @@ public class MainActivity extends AppCompatActivity {
         view.setText(date);
 
     }
-    public void setClockAttributes(Clock c){
+    public static void setClockAttributes(Clock c){
+        clock1.setBackgroundColor(c.getBackgroundColor());
+        clock1.setBorderColor(c.getBorderColor());
+        clock1.setTimeZone(c.getTimeZone());
+        clock1.setFont(c.getFont());
+        clock1.setFontColor(c.getFontColor());
+        clock.setBackgroundColor(c.getBackgroundColor());
+        frame.setBackgroundColor(c.getBorderColor());
 
+        clock.setTimeZone(c.getTimeZone());
+        Log.i("MainActivity","timezone "+clock.getTimeZone());
+        clock.setTypeface(Typeface.create(c.getFont(),Typeface.BOLD_ITALIC));
+        dateView.setTextColor(c.getFontColor());
+        dateView.setTypeface(Typeface.create(c.getFont(),Typeface.NORMAL));
+        dateView.setBackgroundColor(c.getBackgroundColor());
+        clock.setTextColor(c.getFontColor());
       // clock.setBackgroundColor(Color.parseColor(c.getBackgroundColor()));
     }
 }

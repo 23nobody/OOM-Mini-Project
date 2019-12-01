@@ -7,7 +7,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import androidx.core.app.NotificationCompat;public class AlarmService extends IntentService {
+import androidx.core.app.NotificationCompat;
+public class AlarmService extends IntentService {
     private NotificationManager alarmNotificationManager;
 
     public AlarmService() {

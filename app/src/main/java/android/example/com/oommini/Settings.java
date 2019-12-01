@@ -33,11 +33,12 @@ public class Settings extends AppCompatActivity {
     View bgBox;
     View tcBox;
     View frBox;
-    Clock clock = MainActivity.clock1;
+    Clock clock;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customize);
+        clock = MainActivity.clock1;;
          frame = (LinearLayout) findViewById(R.id.frame_color);
          background = (LinearLayout) findViewById(R.id.background_color);
          tColor = (LinearLayout) findViewById(R.id.text_color);

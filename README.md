@@ -23,8 +23,8 @@ Here are some screenshots of app made in java.
 - [Shreyansh Sahu](https://github.com/23nobody)
 
 ### You can have a look at:
-- [Class Diagram](Class Diagram(2).pdf) 
-- [Use Case](use case.pdf) 
+- [Class Diagram](ClassDiagram.pdf) 
+- [Use Case](UseCase.pdf) 
 - [CRC](CRC.pdf) 
 
 ### HOW TO INSTALL

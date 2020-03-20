@@ -1,17 +1,32 @@
+# Digital Clock
+## OOM Mini-Project
+
 This is a Digital Clock android application created as mini project
 of Objecct Oriented Methodologies under instructor O.P.Vyas at
 Indian Institute of Information Technology, Allahabad.
 
-Authors
-Group Number 23,
-Shreyansh Sahu (Roll: IIT2018073)
-Ankit Kumar Das(Roll:IIT2018020)
-Ashwani Rai(Roll: IIT2018006)
+### Key features of the app includes
 
-Class Diagram, Use Case and CRC is Attached.
+- Uses device's user-defined android clock widget displays time accordingly.
+- User can choose a different time-zone from the given list in the app.
+- User can choose different font for the clock.
+- User can change the color of text, background and frame of the clock using the embedded Color Picker.
+- User can set alarm (Alarm tune will be fetched from user selected tune in the device settings).
+ 
+Here are some screenshots of app made in java.
+ ![Clock](Screenshot1.png) ![Cutomized](Screenshot2.png)
+ ![Settings](Screenshot3.png) ![Color Picker](Screenshot4.png)
+ ![Alarm Screen](Screenshot5.png)
 
-HOW TO INSTALL
---------------
+### Authors
+- [Shreyansh Sahu](https://github.com/23nobody)
+
+### You can have a look at:
+- [Class Diagram](Class Diagram(2).pdf) 
+- [Use Case](use case.pdf) 
+- [CRC](CRC.pdf) 
+
+### HOW TO INSTALL
 
 If you have Andorid Studio simply open the project, connect your mobile and install.
 

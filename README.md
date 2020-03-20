@@ -14,6 +14,7 @@ Indian Institute of Information Technology, Allahabad.
 - User can set alarm (Alarm tune will be fetched from user selected tune in the device settings).
  
 Here are some screenshots of app made in java.
+
  ![Clock](Screenshot1.png) ![Cutomized](Screenshot2.png)
  ![Settings](Screenshot3.png) ![Color Picker](Screenshot4.png)
  ![Alarm Screen](Screenshot5.png)

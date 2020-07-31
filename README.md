@@ -12,7 +12,13 @@ Indian Institute of Information Technology, Allahabad.
 - User can choose different font for the clock.
 - User can change the color of text, background and frame of the clock using the embedded Color Picker.
 - User can set alarm (Alarm tune will be fetched from user selected tune in the device settings).
- 
+
+### HOW TO INSTALL
+
+If you have Andorid Studio simply open the project, connect your mobile and install.
+Else
+Copy "app-debug.apk" in your android mobile and install it from pakage installer in your handset.
+
 Here are some screenshots of app made in java.
 
  ![Clock](Screenshot1.png) ![Cutomized](Screenshot2.png)

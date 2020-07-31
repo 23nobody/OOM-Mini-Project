@@ -2,10 +2,10 @@
 ## OOM Mini-Project
 
 This is a Digital Clock android application created as mini project
-of Objecct Oriented Methodologies under instructor O.P.Vyas at
+of Object Oriented Methodologies under instructor O.P.Vyas at
 Indian Institute of Information Technology, Allahabad.
 
-### Key features of the app includes
+### Key features of the app includes:
 
 - Uses device's user-defined android clock widget displays time accordingly.
 - User can choose a different time-zone from the given list in the app.
